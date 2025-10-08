@@ -1,0 +1,2 @@
+/var/spool/slurmd/job44466946/slurm_script: line 28: 3494183 Killed                  python /home/users/mendrika/Zambia-Intercomparison/scripts/zambia-nb-x0.py "$domain_lat_min" "$domain_lat_max" "$domain_lon_min" "$domain_lon_max" "$region_name"
+slurmstepd: error: Detected 1 oom_kill event in StepId=44466946.batch. Some of the step tasks have been OOM Killed.
