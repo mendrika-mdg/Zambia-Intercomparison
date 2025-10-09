@@ -74,16 +74,6 @@ if storm_counts:
     storm_counts = np.array(storm_counts)
     np.save(f"{output_dir}/nbx0-{region_name}.npy", storm_counts)
     print(f"\nSaved storm count array ({storm_counts.size} entries) to {output_dir}/nbx0-{region_name}.npy")
-
-    # Optional: quick histogram
-    plt.figure()
-    plt.hist(storm_counts, bins=50, colour="steelblue", edgecolor="black")
-    plt.title(f"Storm Counts ({region_name.upper()})")
-    plt.xlabel("Number of storms")
-    plt.ylabel("Frequency")
-    plt.grid(True, linestyle="--", alpha=0.6)
-    plt.savefig(f"{output_dir}/nbx0-{region_name}-hist.png", dpi=150)
-    plt.close()
 else:
     print("No valid storm data was found.")
 

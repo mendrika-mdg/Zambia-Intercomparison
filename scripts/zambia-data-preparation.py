@@ -12,20 +12,18 @@ import snflics
 
 
 # For a given region, add yx bounds and context domain
-y_min, y_max = 547, 970
-x_min, x_max = 1436, 1898
-
-CONTEXT_LAT_MIN = -19
-CONTEXT_LAT_MAX = -7
-CONTEXT_LON_MIN = 21
-CONTEXT_LON_MAX = 35
-
+y_min, y_max = 580, 930
+x_min, x_max = 1480, 1850
 
 # Import geodata and crop it accordingly
 geodata = np.load("/gws/nopw/j04/cocoon/SSA_domain/lat_lon_2268_2080.npz")
-lons = geodata["lon"][y_min:y_max+1, x_min:x_max+1]
-lats = geodata["lat"][y_min:y_max+1, x_min:x_max+1]
+lons = geodata["lon"][y_min:y_max, x_min:x_max]
+lats = geodata["lat"][y_min:y_max, x_min:x_max]
 
+CONTEXT_LAT_MIN = np.min(lats)
+CONTEXT_LAT_MAX = np.max(lats)
+CONTEXT_LON_MIN = np.min(lons)
+CONTEXT_LON_MAX = np.max(lons)
 
 # Cropped core data
 def prepare_core(file):
@@ -35,7 +33,7 @@ def prepare_core(file):
     try:
         # using a context manager to ensure proper file closure
         with Dataset(file, "r") as data:
-            cores = data.variables["cores"][0, y_min:y_max+1, x_min:x_max+1]
+            cores = data.variables["cores"][0, y_min:y_max, x_min:x_max]
     except OSError as e:
         raise OSError(f"Error opening NetCDF file: {file}. {e}")
 
@@ -106,8 +104,12 @@ def create_storm_database(data_t, lats, lons):
     """
 
     # Crop domain
-    cores_t = data_t["cores"][0, y_min:y_max+1, x_min:x_max+1]
-    tir_t   = data_t["tir"][0, y_min:y_max+1, x_min:x_max+1]
+    cores_t = data_t["cores"][0, y_min:y_max, x_min:x_max]
+
+    if not np.any(cores_t):
+        return {}
+
+    tir_t   = data_t["tir"][0, y_min:y_max, x_min:x_max]
 
     # Max lat/lon of all detected power maxima
     Pmax_lat, Pmax_lon = data_t["max_lat"][:], data_t["max_lon"][:]
@@ -151,7 +153,9 @@ def create_storm_database(data_t, lats, lons):
     for lat, lon in zip(Pmax_lat, Pmax_lon):
         try:
             y, x = snflics.to_yx(lat, lon, lats, lons)
-        except IndexError:
+            if y is None or x is None:
+                continue
+        except (IndexError, TypeError):
             continue
         lab = labeled_array[y, x]
         if lab == 0 or lab in storm_database:
@@ -170,6 +174,7 @@ def create_storm_database(data_t, lats, lons):
             "mask": 1,
         }
     return storm_database
+    
 
 
 def generate_fictional_storm(context_lat_min, context_lat_max,
@@ -248,7 +253,6 @@ def transform_to_array(data, time_lag):
     Each row corresponds to one storm core at a given time lag.
 
     Args:
-        time_obs (dict): Dictionary with keys ['year','month','day','hour','minute'].
         data (list): List of (id, storm_dict) tuples from pad_observed_storms().
         time_lag (int): Time lag index (e.g., 0, 1, 2).
 
@@ -388,6 +392,11 @@ for file_t in all_files[:]:
         print(f"Skipping {file_t}: unreadable core file.")
         continue
 
+    # Skip if any of the files is invalid or empty
+    if any((c is None) or (not np.any(c)) for c in core_series):
+        print(f"Skipping {file_t}: one or more lead-time core files are empty.")
+        continue
+
     # Check if there are valid cores at t0
     with Dataset(file_t, "r") as data_t:
         Pmax_lat = data_t["max_lat"][:]
@@ -443,11 +452,15 @@ for file_t in all_files[:]:
     }, INPUT_LT0)
     print(f"Saved input tensor + global context: {INPUT_LT0}")
 
-    # Save binary targets for each lead time
-    for i, core in enumerate(core_series):
+    # Save binary targets with lead-time metadata
+    for i, (h, core) in enumerate(zip(lead_times, core_series)):
         target_tensor = torch.tensor(core != 0, dtype=torch.uint8)
-        output_file_path = OUTPUT_PATHS[f"LT{lead_times[i]}"]
-        torch.save(target_tensor, output_file_path)
+        output_file_path = OUTPUT_PATHS[f"LT{h}"]
+
+        torch.save({
+            "data": target_tensor,           # (350, 340)
+            "lead_time": h,                  # hours ahead
+            "nowcast_origin": NOWCAST_ORIGIN # YYYYMMDD_HHMM
+        }, output_file_path)
+
     print(f"Saved {len(lead_times)} targets for {NOWCAST_ORIGIN}")
-
-

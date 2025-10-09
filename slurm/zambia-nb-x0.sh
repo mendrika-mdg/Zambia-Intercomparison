@@ -17,10 +17,10 @@ module load jaspy/3.11
 source /home/users/mendrika/SSA/bin/activate
 
 # Define region parameters
-domain_lat_min=-19
-domain_lat_max=-7
-domain_lon_min=21
-domain_lon_max=35
+domain_lat_min=-18.414806
+domain_lat_max=-7.9918404
+domain_lon_min=21.167515
+domain_lon_max=35.316326
 region_name="zambia"
 
 # Run Python script with arguments

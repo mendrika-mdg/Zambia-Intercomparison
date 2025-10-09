@@ -1,0 +1,144 @@
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240227_2300.pt
+Saved 5 targets for 20240227_2300
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240227_2315.pt
+Saved 5 targets for 20240227_2315
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240227_2330.pt
+Saved 5 targets for 20240227_2330
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240227_2345.pt
+Saved 5 targets for 20240227_2345
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_0000.pt
+Saved 5 targets for 20240228_0000
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_0015.pt
+Saved 5 targets for 20240228_0015
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_0030.pt
+Saved 5 targets for 20240228_0030
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_0045.pt
+Saved 5 targets for 20240228_0045
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_0100.pt
+Saved 5 targets for 20240228_0100
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_0115.pt
+Saved 5 targets for 20240228_0115
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_0130.pt
+Saved 5 targets for 20240228_0130
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_0145.pt
+Saved 5 targets for 20240228_0145
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280200.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280215.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280230.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280245.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280300.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280315.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280330.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280345.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280400.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280415.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280430.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280445.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280500.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280515.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280530.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280545.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280600.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280615.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280630.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280645.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280700.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280715.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280730.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280745.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280800.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280815.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280830.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280845.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280900.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280915.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280930.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402280945.nc: one or more lead-time core files are empty.
+Skipping /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402281000.nc: one or more lead-time core files are empty.
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1015.pt
+Saved 5 targets for 20240228_1015
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1030.pt
+Saved 5 targets for 20240228_1030
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1045.pt
+Saved 5 targets for 20240228_1045
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1100.pt
+Saved 5 targets for 20240228_1100
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1115.pt
+Saved 5 targets for 20240228_1115
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1130.pt
+Saved 5 targets for 20240228_1130
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1145.pt
+Saved 5 targets for 20240228_1145
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1200.pt
+Saved 5 targets for 20240228_1200
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1215.pt
+Saved 5 targets for 20240228_1215
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1230.pt
+Saved 5 targets for 20240228_1230
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1245.pt
+Saved 5 targets for 20240228_1245
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1300.pt
+Saved 5 targets for 20240228_1300
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1315.pt
+Saved 5 targets for 20240228_1315
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1330.pt
+Saved 5 targets for 20240228_1330
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1345.pt
+Saved 5 targets for 20240228_1345
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1400.pt
+Saved 5 targets for 20240228_1400
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1415.pt
+Saved 5 targets for 20240228_1415
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1430.pt
+Saved 5 targets for 20240228_1430
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1445.pt
+Saved 5 targets for 20240228_1445
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1500.pt
+Saved 5 targets for 20240228_1500
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1515.pt
+Saved 5 targets for 20240228_1515
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1530.pt
+Saved 5 targets for 20240228_1530
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1545.pt
+Saved 5 targets for 20240228_1545
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1600.pt
+Saved 5 targets for 20240228_1600
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1615.pt
+Saved 5 targets for 20240228_1615
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1630.pt
+Saved 5 targets for 20240228_1630
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1645.pt
+Saved 5 targets for 20240228_1645
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1700.pt
+Saved 5 targets for 20240228_1700
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1715.pt
+Saved 5 targets for 20240228_1715
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1730.pt
+Saved 5 targets for 20240228_1730
+Saved input tensor + global context: /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/raw/inputs_t0/input-20240228_1745.pt
+Saved 5 targets for 20240228_1745
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402281800.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402281815.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402281830.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402281845.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402281900.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402281915.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402281930.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402281945.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282000.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282015.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282030.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282045.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282100.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282115.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282130.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282145.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282200.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282215.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282230.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282245.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282300.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282315.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282330.nc
+Missing required files for /gws/nopw/j04/cocoon/SSA_domain/ch9_wavelet/2024/02/202402282345.nc
+Job completed successfully.
