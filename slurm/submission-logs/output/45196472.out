@@ -1,0 +1,249 @@
+Creating shards for partition=TRAIN, lead time=2h
+Total input files: 76,138
+Skipping input-20040206_1115.pt due to unexpected shape:
+  Input:  (96, 10)
+  Target: (350, 370)
+Skipping input-20040206_1215.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_000 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_000.pt
+Saved shard_001 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_001.pt
+Saved shard_002 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_002.pt
+Saved shard_003 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_003.pt
+Saved shard_004 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_004.pt
+Saved shard_005 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_005.pt
+Saved shard_006 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_006.pt
+Saved shard_007 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_007.pt
+Skipping input-20051219_1000.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20051219_1015.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20051219_1030.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20051219_1045.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20051219_1100.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20051219_1115.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_008 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_008.pt
+Saved shard_009 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_009.pt
+Saved shard_010 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_010.pt
+Saved shard_011 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_011.pt
+Saved shard_012 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_012.pt
+Saved shard_013 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_013.pt
+Saved shard_014 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_014.pt
+Saved shard_015 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_015.pt
+Saved shard_016 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_016.pt
+Saved shard_017 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_017.pt
+Saved shard_018 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_018.pt
+Saved shard_019 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_019.pt
+Saved shard_020 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_020.pt
+Saved shard_021 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_021.pt
+Saved shard_022 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_022.pt
+Saved shard_023 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_023.pt
+Saved shard_024 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_024.pt
+Saved shard_025 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_025.pt
+Saved shard_026 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_026.pt
+Skipping input-20090210_1030.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20090211_1000.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20090211_1015.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20090211_1100.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20090211_1115.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_027 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_027.pt
+Saved shard_028 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_028.pt
+Saved shard_029 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_029.pt
+Saved shard_030 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_030.pt
+Saved shard_031 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_031.pt
+Skipping input-20100206_0900.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20100206_0915.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20100206_0945.pt due to unexpected shape:
+  Input:  (96, 10)
+  Target: (350, 370)
+Skipping input-20100206_1000.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20100206_1015.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20100206_1045.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20100215_1215.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20100215_1315.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_032 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_032.pt
+Saved shard_033 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_033.pt
+Saved shard_034 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_034.pt
+Saved shard_035 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_035.pt
+Saved shard_036 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_036.pt
+Saved shard_037 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_037.pt
+Skipping input-20111206_1045.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20111206_1100.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20111207_1015.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20111207_1030.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_038 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_038.pt
+Saved shard_039 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_039.pt
+Saved shard_040 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_040.pt
+Saved shard_041 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_041.pt
+Skipping input-20120205_1030.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_042 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_042.pt
+Saved shard_043 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_043.pt
+Saved shard_044 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_044.pt
+Skipping input-20121223_1030.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_045 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_045.pt
+Skipping input-20130110_1000.pt due to unexpected shape:
+  Input:  (96, 10)
+  Target: (350, 370)
+Skipping input-20130110_1015.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20130110_1100.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_046 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_046.pt
+Saved shard_047 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_047.pt
+Saved shard_048 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_048.pt
+Saved shard_049 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_049.pt
+Saved shard_050 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_050.pt
+Saved shard_051 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_051.pt
+Saved shard_052 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_052.pt
+Saved shard_053 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_053.pt
+Saved shard_054 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_054.pt
+Skipping input-20141225_0900.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20141225_1000.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_055 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_055.pt
+Saved shard_056 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_056.pt
+Saved shard_057 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_057.pt
+Saved shard_058 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_058.pt
+Skipping input-20151201_0900.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20151201_1030.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20151206_1000.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20151206_1100.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_059 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_059.pt
+Saved shard_060 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_060.pt
+Saved shard_061 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_061.pt
+Saved shard_062 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_062.pt
+Skipping input-20160216_1015.pt due to unexpected shape:
+  Input:  (96, 10)
+  Target: (350, 370)
+Skipping input-20160216_1030.pt due to unexpected shape:
+  Input:  (96, 10)
+  Target: (350, 370)
+Skipping input-20160216_1045.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20160216_1100.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20160216_1115.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20160216_1130.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_063 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_063.pt
+Saved shard_064 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_064.pt
+Saved shard_065 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_065.pt
+Saved shard_066 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_066.pt
+Saved shard_067 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_067.pt
+Saved shard_068 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_068.pt
+Skipping input-20171201_1115.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20171212_0930.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_069 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_069.pt
+Saved shard_070 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_070.pt
+Skipping input-20180124_0930.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20180124_1030.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_071 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_071.pt
+Saved shard_072 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_072.pt
+Saved shard_073 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_073.pt
+Saved shard_074 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_074.pt
+Skipping input-20181218_0930.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20181218_0945.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20181218_1030.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20181218_1045.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20181220_0845.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20181220_0915.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20181220_0930.pt due to unexpected shape:
+  Input:  (96, 10)
+  Target: (350, 370)
+Skipping input-20181220_0945.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20181220_1015.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Skipping input-20181220_1030.pt due to unexpected shape:
+  Input:  (192, 10)
+  Target: (350, 370)
+Saved shard_075 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_075.pt
+Saved shard_076 (82 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t2/train_t2/shard_076.pt
+Finished creating TRAIN shards for LT2.
+Job completed successfully.

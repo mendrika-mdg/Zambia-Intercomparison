@@ -1,0 +1,42 @@
+Creating shards for partition=TEST, lead time=1h
+Total input files: 22,761
+Saved shard_000 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_000.pt
+Shape mismatch before saving shard_001
+  Input:  {(192, 10), (288, 10), (96, 10)}
+  Target: {(350, 370)}
+  Global: {(4,)}
+Saved shard_001 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_001.pt
+Saved shard_002 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_002.pt
+Saved shard_003 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_003.pt
+Saved shard_004 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_004.pt
+Saved shard_005 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_005.pt
+Saved shard_006 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_006.pt
+Saved shard_007 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_007.pt
+Saved shard_008 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_008.pt
+Saved shard_009 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_009.pt
+Saved shard_010 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_010.pt
+Saved shard_011 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_011.pt
+Shape mismatch before saving shard_012
+  Input:  {(192, 10), (288, 10)}
+  Target: {(350, 370)}
+  Global: {(4,)}
+Saved shard_012 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_012.pt
+Saved shard_013 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_013.pt
+Saved shard_014 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_014.pt
+Saved shard_015 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_015.pt
+Shape mismatch before saving shard_016
+  Input:  {(192, 10), (288, 10)}
+  Target: {(350, 370)}
+  Global: {(4,)}
+Shape mismatch before saving shard_016
+  Input:  {(192, 10), (288, 10)}
+  Target: {(350, 370)}
+  Global: {(4,)}
+Saved shard_016 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_016.pt
+Shape mismatch before saving shard_017
+  Input:  {(192, 10), (288, 10)}
+  Target: {(350, 370)}
+  Global: {(4,)}
+Saved shard_017 (761 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/test_t1/shard_017.pt
+Finished creating TEST shards for LT1.
+Job completed successfully.

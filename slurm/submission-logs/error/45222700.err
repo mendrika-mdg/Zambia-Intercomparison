@@ -1,0 +1,6 @@
+Scaling train_t2:   0%|          | 0/77 [00:00<?, ?it/s]Scaling train_t2:   0%|          | 0/77 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/users/mendrika/Zambia-Intercomparison/scripts/zambia-apply-scaler.py", line 52, in <module>
+    (flat[real_mask, COLS_TO_SCALE] - mean[COLS_TO_SCALE]) / scale[COLS_TO_SCALE]
+     ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: shape mismatch: indexing arrays could not be broadcast together with shapes (28027,) (8,) 

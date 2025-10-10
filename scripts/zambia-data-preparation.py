@@ -8,12 +8,13 @@ from skimage.transform import resize
 from datetime import datetime, timedelta
 
 sys.path.insert(1, "/home/users/mendrika/SSA/SA/module")
-import snflics
+import snflics # type: ignore
 
 
 # For a given region, add yx bounds and context domain
 y_min, y_max = 580, 930
 x_min, x_max = 1480, 1850
+
 
 # Import geodata and crop it accordingly
 geodata = np.load("/gws/nopw/j04/cocoon/SSA_domain/lat_lon_2268_2080.npz")
@@ -458,7 +459,7 @@ for file_t in all_files[:]:
         output_file_path = OUTPUT_PATHS[f"LT{h}"]
 
         torch.save({
-            "data": target_tensor,           # (350, 340)
+            "data": target_tensor,           # (350, 370)
             "lead_time": h,                  # hours ahead
             "nowcast_origin": NOWCAST_ORIGIN # YYYYMMDD_HHMM
         }, output_file_path)
