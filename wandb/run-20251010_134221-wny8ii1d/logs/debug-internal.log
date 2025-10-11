@@ -1,0 +1,15 @@
+{"time":"2025-10-10T13:42:23.514123579+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251010_134221-wny8ii1d/logs/debug-core.log"}
+{"time":"2025-10-10T13:42:24.087648828+01:00","level":"INFO","msg":"stream: created new stream","id":"wny8ii1d"}
+{"time":"2025-10-10T13:42:24.087698438+01:00","level":"INFO","msg":"stream: started","id":"wny8ii1d"}
+{"time":"2025-10-10T13:42:24.087723538+01:00","level":"INFO","msg":"handler: started","stream_id":"wny8ii1d"}
+{"time":"2025-10-10T13:42:24.087718068+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"wny8ii1d"}
+{"time":"2025-10-10T13:42:24.087750448+01:00","level":"INFO","msg":"sender: started","stream_id":"wny8ii1d"}
+{"time":"2025-10-10T13:42:24.459416317+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-10T13:55:05.854033299+01:00","level":"INFO","msg":"stream: closing","id":"wny8ii1d"}
+{"time":"2025-10-10T13:55:05.854091309+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-10T13:55:05.854906299+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-10T13:55:06.321700222+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-10T13:55:06.860481842+01:00","level":"INFO","msg":"handler: closed","stream_id":"wny8ii1d"}
+{"time":"2025-10-10T13:55:06.860513252+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wny8ii1d"}
+{"time":"2025-10-10T13:55:06.860546572+01:00","level":"INFO","msg":"sender: closed","stream_id":"wny8ii1d"}
+{"time":"2025-10-10T13:55:06.863276681+01:00","level":"INFO","msg":"stream: closed","id":"wny8ii1d"}

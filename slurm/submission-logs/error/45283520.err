@@ -1,0 +1,86 @@
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/4
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 4 processes
+----------------------------------------------------------------------------------------------------
+
+Initializing distributed: GLOBAL_RANK: 1, MEMBER: 2/4
+Initializing distributed: GLOBAL_RANK: 2, MEMBER: 3/4
+Initializing distributed: GLOBAL_RANK: 3, MEMBER: 4/4
+wandb: Currently logged in as: mgrakotomanga (mgrakotomanga-university-of-leeds) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in ./wandb/run-20251010_140047-xnbctz4x
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run t1-fss
+wandb: ⭐️ View project at https://wandb.ai/mgrakotomanga-university-of-leeds/zambia-cast
+wandb: 🚀 View run at https://wandb.ai/mgrakotomanga-university-of-leeds/zambia-cast/runs/xnbctz4x
+/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:654: Checkpoint directory /home/users/mendrika/Zambia-Intercomparison/models/checkpoints/t1 exists and is not empty.
+LOCAL_RANK: 3 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+LOCAL_RANK: 1 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+LOCAL_RANK: 2 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+
+  | Name        | Type               | Params | Mode 
+-----------------------------------------------------------
+0 | in_proj     | Linear             | 1.4 K  | train
+1 | transformer | TransformerEncoder | 793 K  | train
+2 | global_proj | Linear             | 640    | train
+3 | map_proj    | Linear             | 4.2 M  | train
+4 | decoder     | SimpleDecoder      | 3.8 M  | train
+5 | criterion   | FSSLoss            | 0      | train
+6 | val_auc     | BinaryAUROC        | 0      | train
+-----------------------------------------------------------
+8.9 M     Trainable params
+0         Non-trainable params
+8.9 M     Total params
+35.436    Total estimated model params size (MB)
+66        Modules in train mode
+0         Modules in eval mode
+[rank: 0] Metric val_fss_9 improved. New best score: 0.118
+[rank: 3] Metric val_fss_9 improved. New best score: 0.118
+[rank: 1] Metric val_fss_9 improved. New best score: 0.118
+[rank: 2] Metric val_fss_9 improved. New best score: 0.118
+Epoch 0, global step 595: 'val_fss_9' reached 0.11777 (best 0.11777), saving model to '/home/users/mendrika/Zambia-Intercomparison/models/checkpoints/t1/best-core2map-v1.ckpt' as top 1
+[rank: 3] Metric val_fss_9 improved by 0.056 >= min_delta = 0.001. New best score: 0.174
+[rank: 1] Metric val_fss_9 improved by 0.056 >= min_delta = 0.001. New best score: 0.174
+[rank: 2] Metric val_fss_9 improved by 0.056 >= min_delta = 0.001. New best score: 0.174
+[rank: 0] Metric val_fss_9 improved by 0.056 >= min_delta = 0.001. New best score: 0.174
+Epoch 1, global step 1190: 'val_fss_9' reached 0.17410 (best 0.17410), saving model to '/home/users/mendrika/Zambia-Intercomparison/models/checkpoints/t1/best-core2map-v1.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.047 >= min_delta = 0.001. New best score: 0.221
+[rank: 3] Metric val_fss_9 improved by 0.047 >= min_delta = 0.001. New best score: 0.221
+[rank: 2] Metric val_fss_9 improved by 0.047 >= min_delta = 0.001. New best score: 0.221
+[rank: 1] Metric val_fss_9 improved by 0.047 >= min_delta = 0.001. New best score: 0.221
+Epoch 2, global step 1785: 'val_fss_9' reached 0.22105 (best 0.22105), saving model to '/home/users/mendrika/Zambia-Intercomparison/models/checkpoints/t1/best-core2map-v1.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.036 >= min_delta = 0.001. New best score: 0.257
+[rank: 2] Metric val_fss_9 improved by 0.036 >= min_delta = 0.001. New best score: 0.257
+[rank: 3] Metric val_fss_9 improved by 0.036 >= min_delta = 0.001. New best score: 0.257
+[rank: 1] Metric val_fss_9 improved by 0.036 >= min_delta = 0.001. New best score: 0.257
+Epoch 3, global step 2380: 'val_fss_9' reached 0.25670 (best 0.25670), saving model to '/home/users/mendrika/Zambia-Intercomparison/models/checkpoints/t1/best-core2map-v1.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.020 >= min_delta = 0.001. New best score: 0.277
+[rank: 3] Metric val_fss_9 improved by 0.020 >= min_delta = 0.001. New best score: 0.277
+[rank: 2] Metric val_fss_9 improved by 0.020 >= min_delta = 0.001. New best score: 0.277
+[rank: 1] Metric val_fss_9 improved by 0.020 >= min_delta = 0.001. New best score: 0.277
+Epoch 4, global step 2975: 'val_fss_9' reached 0.27702 (best 0.27702), saving model to '/home/users/mendrika/Zambia-Intercomparison/models/checkpoints/t1/best-core2map-v1.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.004 >= min_delta = 0.001. New best score: 0.281
+[rank: 1] Metric val_fss_9 improved by 0.004 >= min_delta = 0.001. New best score: 0.281
+[rank: 3] Metric val_fss_9 improved by 0.004 >= min_delta = 0.001. New best score: 0.281
+[rank: 2] Metric val_fss_9 improved by 0.004 >= min_delta = 0.001. New best score: 0.281
+Epoch 5, global step 3570: 'val_fss_9' reached 0.28060 (best 0.28060), saving model to '/home/users/mendrika/Zambia-Intercomparison/models/checkpoints/t1/best-core2map-v1.ckpt' as top 1
+[rank: 1] Metric val_fss_9 improved by 0.012 >= min_delta = 0.001. New best score: 0.293
+[rank: 3] Metric val_fss_9 improved by 0.012 >= min_delta = 0.001. New best score: 0.293
+[rank: 2] Metric val_fss_9 improved by 0.012 >= min_delta = 0.001. New best score: 0.293
+[rank: 0] Metric val_fss_9 improved by 0.012 >= min_delta = 0.001. New best score: 0.293
+Epoch 6, global step 4165: 'val_fss_9' reached 0.29280 (best 0.29280), saving model to '/home/users/mendrika/Zambia-Intercomparison/models/checkpoints/t1/best-core2map-v1.ckpt' as top 1
+Epoch 7, global step 4760: 'val_fss_9' was not in top 1
+Epoch 8, global step 5355: 'val_fss_9' was not in top 1
+Epoch 9, global step 5950: 'val_fss_9' was not in top 1
+Epoch 10, global step 6545: 'val_fss_9' was not in top 1
+[rank: 1] Monitored metric val_fss_9 did not improve in the last 5 records. Best score: 0.293. Signaling Trainer to stop.
+[rank: 0] Monitored metric val_fss_9 did not improve in the last 5 records. Best score: 0.293. Signaling Trainer to stop.
+[rank: 3] Monitored metric val_fss_9 did not improve in the last 5 records. Best score: 0.293. Signaling Trainer to stop.
+[rank: 2] Monitored metric val_fss_9 did not improve in the last 5 records. Best score: 0.293. Signaling Trainer to stop.
+Epoch 11, global step 7140: 'val_fss_9' was not in top 1
