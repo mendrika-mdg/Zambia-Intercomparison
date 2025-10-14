@@ -1,0 +1,46 @@
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+
+  | Name        | Type               | Params | Mode
+-----------------------------------------------------------
+0 | in_proj     | Linear             | 1.4 K  | train
+1 | transformer | TransformerEncoder | 793 K  | train
+2 | global_proj | Linear             | 640    | train
+3 | map_proj    | Linear             | 67.6 M | train
+4 | decoder     | SmoothDecoder      | 683 K  | train
+5 | criterion   | FSSLoss            | 0      | train
+6 | val_auc     | BinaryAUROC        | 0      | train
+-----------------------------------------------------------
+69.1 M    Trainable params
+0         Non-trainable params
+69.1 M    Total params
+276.447   Total estimated model params size (MB)
+63        Modules in train mode
+0         Modules in eval mode
+Epoch 14: 100%|██████████| 595/595 [02:52<00:00,  3.44it/s, v_num=o83b, val_fss_9=0.272, val_auc=0.780]
+Done.                                                                   
+[rank: 0] Metric val_fss_9 improved. New best score: 0.109
+Epoch 0, global step 595: 'val_fss_9' reached 0.10935 (best 0.10935), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1_64x64/best-core2map.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.028 >= min_delta = 0.001. New best score: 0.137
+Epoch 1, global step 1190: 'val_fss_9' reached 0.13723 (best 0.13723), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1_64x64/best-core2map.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.017 >= min_delta = 0.001. New best score: 0.154
+Epoch 2, global step 1785: 'val_fss_9' reached 0.15378 (best 0.15378), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1_64x64/best-core2map.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.020 >= min_delta = 0.001. New best score: 0.173
+Epoch 3, global step 2380: 'val_fss_9' reached 0.17331 (best 0.17331), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1_64x64/best-core2map.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.027 >= min_delta = 0.001. New best score: 0.200
+Epoch 4, global step 2975: 'val_fss_9' reached 0.20021 (best 0.20021), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1_64x64/best-core2map.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.035 >= min_delta = 0.001. New best score: 0.236
+Epoch 5, global step 3570: 'val_fss_9' reached 0.23555 (best 0.23555), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1_64x64/best-core2map.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.034 >= min_delta = 0.001. New best score: 0.270
+Epoch 6, global step 4165: 'val_fss_9' reached 0.27001 (best 0.27001), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1_64x64/best-core2map.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.023 >= min_delta = 0.001. New best score: 0.293
+Epoch 7, global step 4760: 'val_fss_9' reached 0.29281 (best 0.29281), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1_64x64/best-core2map.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.021 >= min_delta = 0.001. New best score: 0.314
+Epoch 8, global step 5355: 'val_fss_9' reached 0.31430 (best 0.31430), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1_64x64/best-core2map.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.005 >= min_delta = 0.001. New best score: 0.319
+Epoch 9, global step 5950: 'val_fss_9' reached 0.31919 (best 0.31919), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1_64x64/best-core2map.ckpt' as top 1
+Epoch 10, global step 6545: 'val_fss_9' was not in top 1
+Epoch 11, global step 7140: 'val_fss_9' was not in top 1
+Epoch 12, global step 7735: 'val_fss_9' was not in top 1
+Epoch 13, global step 8330: 'val_fss_9' was not in top 1
+[rank: 0] Monitored metric val_fss_9 did not improve in the last 5 records. Best score: 0.319. Signaling Trainer to stop.
+Epoch 14, global step 8925: 'val_fss_9' was not in top 1

@@ -1,4 +1,5 @@
 import os
+import sys 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -157,7 +158,7 @@ def main():
     # ---------------------------------------------------------------------
     # Configuration
     # ---------------------------------------------------------------------
-    LEAD_TIME = "1"
+    LEAD_TIME = sys.argv[1]
     BASE_DIR = f"/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/preprocessed/t{LEAD_TIME}"
     TRAIN_DIR = f"{BASE_DIR}/train_t{LEAD_TIME}"
     VAL_DIR   = f"{BASE_DIR}/val_t{LEAD_TIME}"

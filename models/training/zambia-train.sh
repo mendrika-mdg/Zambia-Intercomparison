@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=pancast-t1                 # Job name
+#SBATCH --job-name=pancast-t1                # Job name
 #SBATCH --partition=orchid                    # Partition to run on
 #SBATCH --account=orchid                      # Account
 #SBATCH --qos=orchid                          # QoS level
@@ -39,6 +39,6 @@ export PYTHONHASHSEED=0
 # ---------------------------------------------------------------------
 echo "Starting distributed training..."
 
-torchrun --standalone --nproc_per_node=4 /home/users/mendrika/Zambia-Intercomparison/models/training/zambia-train.py
+torchrun --standalone --nproc_per_node=4 /home/users/mendrika/Zambia-Intercomparison/models/training/zambia_lag_corrected.py 1
 
 echo "Training completed at $(date)"

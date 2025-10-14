@@ -1,0 +1,321 @@
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+
+  | Name            | Type               | Params | Mode
+---------------------------------------------------------------
+0 | in_proj         | Linear             | 1.4 K  | train
+1 | transformer     | TransformerEncoder | 793 K  | train
+2 | global_proj     | Linear             | 640    | train
+3 | gridder         | AdaptiveTokenGrid  | 0      | train
+4 | decoder         | SmoothDecoder      | 688 K  | train
+5 | criterion_small | FSSLoss            | 0      | train
+6 | criterion_mid   | FSSLoss            | 0      | train
+7 | criterion_big   | FSSLoss            | 0      | train
+8 | val_auc         | BinaryAUROC        | 0      | train
+---------------------------------------------------------------
+1.5 M     Trainable params
+0         Non-trainable params
+1.5 M     Total params
+5.933     Total estimated model params size (MB)
+75        Modules in train mode
+0         Modules in eval mode
+Epoch 0:   0%|          | 0/595 [00:00<?, ?it/s]                           
+Traceback (most recent call last):
+  File "/home/users/mendrika/Zambia-Intercomparison/models/training/zambia_lag_corrected_raster_64.py", line 260, in <module>
+    main()
+  File "/home/users/mendrika/Zambia-Intercomparison/models/training/zambia_lag_corrected_raster_64.py", line 256, in main
+    trainer.fit(model, train_loader, val_loader)
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/trainer.py", line 561, in fit
+    call._call_and_handle_interrupt(
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/call.py", line 47, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 105, in launch
+    return function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/trainer.py", line 599, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/trainer.py", line 1012, in _run
+    results = self._run_stage()
+              ^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/trainer.py", line 1056, in _run_stage
+    self.fit_loop.run()
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/fit_loop.py", line 216, in run
+    self.advance()
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/fit_loop.py", line 455, in advance
+    self.epoch_loop.run(self._data_fetcher)
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 150, in run
+    self.advance(data_fetcher)
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 320, in advance
+    batch_output = self.automatic_optimization.run(trainer.optimizers[0], batch_idx, kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 192, in run
+    self._optimizer_step(batch_idx, closure)
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 270, in _optimizer_step
+    call._call_lightning_module_hook(
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/call.py", line 176, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/core/module.py", line 1302, in optimizer_step
+    optimizer.step(closure=optimizer_closure)
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/core/optimizer.py", line 154, in step
+    step_output = self._strategy.optimizer_step(self._optimizer, closure, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/strategies/ddp.py", line 270, in optimizer_step
+    optimizer_output = super().optimizer_step(optimizer, closure, model, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/strategies/strategy.py", line 239, in optimizer_step
+    return self.precision_plugin.optimizer_step(optimizer, model=model, closure=closure, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/plugins/precision/amp.py", line 76, in optimizer_step
+    return super().optimizer_step(optimizer, model=model, closure=closure, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/plugins/precision/precision.py", line 123, in optimizer_step
+    return optimizer.step(closure=closure, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/optim/optimizer.py", line 485, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/optim/optimizer.py", line 79, in _use_grad
+    ret = func(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/optim/adam.py", line 225, in step
+    loss = closure()
+           ^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/plugins/precision/precision.py", line 109, in _wrap_closure
+    closure_result = closure()
+                     ^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 146, in __call__
+    self._result = self.closure(*args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 131, in closure
+    step_output = self._step_fn()
+                  ^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 319, in _training_step
+    training_step_output = call._call_strategy_hook(trainer, "training_step", *kwargs.values())
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/call.py", line 328, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/strategies/strategy.py", line 390, in training_step
+    return self._forward_redirection(self.model, self.lightning_module, "training_step", *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/strategies/strategy.py", line 641, in __call__
+    wrapper_output = wrapper_module(*args, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1637, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1464, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/strategies/strategy.py", line 634, in wrapped_forward
+    out = method(*_args, **_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/Zambia-Intercomparison/models/training/zambia_lag_corrected_raster_64.py", line 180, in training_step
+    logits = self(x, g)
+             ^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/Zambia-Intercomparison/models/training/zambia_lag_corrected_raster_64.py", line 169, in forward
+    return self.decoder(latent)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/Zambia-Intercomparison/models/training/zambia_lag_corrected_raster_64.py", line 118, in forward
+    x = self.up(x)
+        ^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/container.py", line 240, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 8.00 GiB. GPU 0 has a total capacity of 39.49 GiB of which 839.25 MiB is free. Including non-PyTorch memory, this process has 38.66 GiB memory in use. Of the allocated memory 30.93 GiB is allocated by PyTorch, and 6.23 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/users/mendrika/Zambia-Intercomparison/models/training/zambia_lag_corrected_raster_64.py", line 260, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/users/mendrika/Zambia-Intercomparison/models/training/zambia_lag_corrected_raster_64.py", line 256, in main
+[rank0]:     trainer.fit(model, train_loader, val_loader)
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/trainer.py", line 561, in fit
+[rank0]:     call._call_and_handle_interrupt(
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/call.py", line 47, in _call_and_handle_interrupt
+[rank0]:     return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 105, in launch
+[rank0]:     return function(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/trainer.py", line 599, in _fit_impl
+[rank0]:     self._run(model, ckpt_path=ckpt_path)
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/trainer.py", line 1012, in _run
+[rank0]:     results = self._run_stage()
+[rank0]:               ^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/trainer.py", line 1056, in _run_stage
+[rank0]:     self.fit_loop.run()
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/fit_loop.py", line 216, in run
+[rank0]:     self.advance()
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/fit_loop.py", line 455, in advance
+[rank0]:     self.epoch_loop.run(self._data_fetcher)
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 150, in run
+[rank0]:     self.advance(data_fetcher)
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 320, in advance
+[rank0]:     batch_output = self.automatic_optimization.run(trainer.optimizers[0], batch_idx, kwargs)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 192, in run
+[rank0]:     self._optimizer_step(batch_idx, closure)
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 270, in _optimizer_step
+[rank0]:     call._call_lightning_module_hook(
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/call.py", line 176, in _call_lightning_module_hook
+[rank0]:     output = fn(*args, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/core/module.py", line 1302, in optimizer_step
+[rank0]:     optimizer.step(closure=optimizer_closure)
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/core/optimizer.py", line 154, in step
+[rank0]:     step_output = self._strategy.optimizer_step(self._optimizer, closure, **kwargs)
+[rank0]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/strategies/ddp.py", line 270, in optimizer_step
+[rank0]:     optimizer_output = super().optimizer_step(optimizer, closure, model, **kwargs)
+[rank0]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/strategies/strategy.py", line 239, in optimizer_step
+[rank0]:     return self.precision_plugin.optimizer_step(optimizer, model=model, closure=closure, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/plugins/precision/amp.py", line 76, in optimizer_step
+[rank0]:     return super().optimizer_step(optimizer, model=model, closure=closure, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/plugins/precision/precision.py", line 123, in optimizer_step
+[rank0]:     return optimizer.step(closure=closure, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/optim/optimizer.py", line 485, in wrapper
+[rank0]:     out = func(*args, **kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/optim/optimizer.py", line 79, in _use_grad
+[rank0]:     ret = func(self, *args, **kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/optim/adam.py", line 225, in step
+[rank0]:     loss = closure()
+[rank0]:            ^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/plugins/precision/precision.py", line 109, in _wrap_closure
+[rank0]:     closure_result = closure()
+[rank0]:                      ^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 146, in __call__
+[rank0]:     self._result = self.closure(*args, **kwargs)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 131, in closure
+[rank0]:     step_output = self._step_fn()
+[rank0]:                   ^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 319, in _training_step
+[rank0]:     training_step_output = call._call_strategy_hook(trainer, "training_step", *kwargs.values())
+[rank0]:                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/trainer/call.py", line 328, in _call_strategy_hook
+[rank0]:     output = fn(*args, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/strategies/strategy.py", line 390, in training_step
+[rank0]:     return self._forward_redirection(self.model, self.lightning_module, "training_step", *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/strategies/strategy.py", line 641, in __call__
+[rank0]:     wrapper_output = wrapper_module(*args, **kwargs)
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1637, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1464, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/strategies/strategy.py", line 634, in wrapped_forward
+[rank0]:     out = method(*_args, **_kwargs)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/Zambia-Intercomparison/models/training/zambia_lag_corrected_raster_64.py", line 180, in training_step
+[rank0]:     logits = self(x, g)
+[rank0]:              ^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/Zambia-Intercomparison/models/training/zambia_lag_corrected_raster_64.py", line 169, in forward
+[rank0]:     return self.decoder(latent)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/Zambia-Intercomparison/models/training/zambia_lag_corrected_raster_64.py", line 118, in forward
+[rank0]:     x = self.up(x)
+[rank0]:         ^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/container.py", line 240, in forward
+[rank0]:     input = module(input)
+[rank0]:             ^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 554, in forward
+[rank0]:     return self._conv_forward(input, self.weight, self.bias)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+[rank0]:     return F.conv2d(
+[rank0]:            ^^^^^^^^^
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 8.00 GiB. GPU 0 has a total capacity of 39.49 GiB of which 839.25 MiB is free. Including non-PyTorch memory, this process has 38.66 GiB memory in use. Of the allocated memory 30.93 GiB is allocated by PyTorch, and 6.23 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

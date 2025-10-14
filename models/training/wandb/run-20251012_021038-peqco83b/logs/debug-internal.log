@@ -1,0 +1,15 @@
+{"time":"2025-10-12T02:10:38.66108038+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251012_021038-peqco83b/logs/debug-core.log"}
+{"time":"2025-10-12T02:10:38.90416329+01:00","level":"INFO","msg":"stream: created new stream","id":"peqco83b"}
+{"time":"2025-10-12T02:10:38.904216209+01:00","level":"INFO","msg":"stream: started","id":"peqco83b"}
+{"time":"2025-10-12T02:10:38.904227489+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"peqco83b"}
+{"time":"2025-10-12T02:10:38.904238258+01:00","level":"INFO","msg":"handler: started","stream_id":"peqco83b"}
+{"time":"2025-10-12T02:10:38.904261568+01:00","level":"INFO","msg":"sender: started","stream_id":"peqco83b"}
+{"time":"2025-10-12T02:10:39.240979886+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-12T02:54:34.571254919+01:00","level":"INFO","msg":"stream: closing","id":"peqco83b"}
+{"time":"2025-10-12T02:54:34.571352578+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-12T02:54:34.571562764+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-12T02:54:34.996390803+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-12T02:54:35.337618173+01:00","level":"INFO","msg":"handler: closed","stream_id":"peqco83b"}
+{"time":"2025-10-12T02:54:35.337654732+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"peqco83b"}
+{"time":"2025-10-12T02:54:35.337676762+01:00","level":"INFO","msg":"sender: closed","stream_id":"peqco83b"}
+{"time":"2025-10-12T02:54:35.33962633+01:00","level":"INFO","msg":"stream: closed","id":"peqco83b"}
