@@ -1,0 +1,15 @@
+{"time":"2025-10-12T17:35:41.140664787+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251012_173540-nuv66ngl/logs/debug-core.log"}
+{"time":"2025-10-12T17:35:41.385705709+01:00","level":"INFO","msg":"stream: created new stream","id":"nuv66ngl"}
+{"time":"2025-10-12T17:35:41.385747588+01:00","level":"INFO","msg":"stream: started","id":"nuv66ngl"}
+{"time":"2025-10-12T17:35:41.385777768+01:00","level":"INFO","msg":"sender: started","stream_id":"nuv66ngl"}
+{"time":"2025-10-12T17:35:41.385775528+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"nuv66ngl"}
+{"time":"2025-10-12T17:35:41.385795307+01:00","level":"INFO","msg":"handler: started","stream_id":"nuv66ngl"}
+{"time":"2025-10-12T17:35:41.747563771+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-12T17:44:36.198103409+01:00","level":"INFO","msg":"stream: closing","id":"nuv66ngl"}
+{"time":"2025-10-12T17:44:36.198264307+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-12T17:44:36.198456283+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-12T17:44:36.626605431+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-12T17:44:36.948327082+01:00","level":"INFO","msg":"handler: closed","stream_id":"nuv66ngl"}
+{"time":"2025-10-12T17:44:36.948362032+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"nuv66ngl"}
+{"time":"2025-10-12T17:44:36.948394921+01:00","level":"INFO","msg":"sender: closed","stream_id":"nuv66ngl"}
+{"time":"2025-10-12T17:44:36.950397848+01:00","level":"INFO","msg":"stream: closed","id":"nuv66ngl"}

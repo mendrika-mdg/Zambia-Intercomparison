@@ -1,0 +1,37 @@
+/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:654: Checkpoint directory /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1 exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+
+  | Name        | Type               | Params | Mode
+-----------------------------------------------------------
+0 | in_proj     | Linear             | 1.4 K  | train
+1 | transformer | TransformerEncoder | 793 K  | train
+2 | global_proj | Linear             | 640    | train
+3 | map_proj    | Linear             | 4.2 M  | train
+4 | decoder     | SimpleDecoder      | 3.8 M  | train
+5 | criterion   | FSSLoss            | 0      | train
+6 | val_auc     | BinaryAUROC        | 0      | train
+-----------------------------------------------------------
+8.9 M     Trainable params
+0         Non-trainable params
+8.9 M     Total params
+35.436    Total estimated model params size (MB)
+66        Modules in train mode
+0         Modules in eval mode
+Epoch 10:  45%|████▌     | 268/595 [00:25<00:31, 10.54it/s, v_num=n8s1, val_fss_9=0.216, val_auc=0.840]
+                                                                        
+[rank: 0] Metric val_fss_9 improved. New best score: 0.133
+Epoch 0, global step 595: 'val_fss_9' reached 0.13331 (best 0.13331), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1/best-core2map-v2.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.077 >= min_delta = 0.001. New best score: 0.210
+Epoch 1, global step 1190: 'val_fss_9' reached 0.21024 (best 0.21024), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1/best-core2map-v2.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.033 >= min_delta = 0.001. New best score: 0.244
+Epoch 2, global step 1785: 'val_fss_9' reached 0.24370 (best 0.24370), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1/best-core2map-v2.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.015 >= min_delta = 0.001. New best score: 0.259
+Epoch 3, global step 2380: 'val_fss_9' reached 0.25858 (best 0.25858), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1/best-core2map-v2.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.013 >= min_delta = 0.001. New best score: 0.272
+Epoch 4, global step 2975: 'val_fss_9' reached 0.27205 (best 0.27205), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1/best-core2map-v2.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.030 >= min_delta = 0.001. New best score: 0.302
+Epoch 5, global step 3570: 'val_fss_9' reached 0.30216 (best 0.30216), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1/best-core2map-v2.ckpt' as top 1
+Epoch 6, global step 4165: 'val_fss_9' was not in top 1
+Epoch 7, global step 4760: 'val_fss_9' was not in top 1
+Epoch 8, global step 5355: 'val_fss_9' was not in top 1
+Epoch 9, global step 5950: 'val_fss_9' was not in top 1

@@ -1,0 +1,32 @@
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+
+  | Name        | Type               | Params | Mode
+-----------------------------------------------------------
+0 | in_proj     | Linear             | 1.4 K  | train
+1 | transformer | TransformerEncoder | 793 K  | train
+2 | global_proj | Linear             | 640    | train
+3 | map_proj    | Linear             | 4.2 M  | train
+4 | decoder     | SimpleDecoder      | 3.8 M  | train
+5 | criterion   | FSSLoss            | 0      | train
+6 | val_auc     | BinaryAUROC        | 0      | train
+-----------------------------------------------------------
+8.9 M     Trainable params
+0         Non-trainable params
+8.9 M     Total params
+35.436    Total estimated model params size (MB)
+66        Modules in train mode
+0         Modules in eval mode
+Epoch 7: 100%|██████████| 595/595 [00:57<00:00, 10.26it/s, v_num=rq6j, val_fss_9=0.142, val_auc=0.784]
+Done.                                                                   
+[rank: 0] Metric val_fss_9 improved. New best score: 0.161
+Epoch 0, global step 595: 'val_fss_9' reached 0.16133 (best 0.16133), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t2/best-core2map.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.043 >= min_delta = 0.001. New best score: 0.204
+Epoch 1, global step 1190: 'val_fss_9' reached 0.20386 (best 0.20386), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t2/best-core2map.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.001 >= min_delta = 0.001. New best score: 0.205
+Epoch 2, global step 1785: 'val_fss_9' reached 0.20514 (best 0.20514), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t2/best-core2map.ckpt' as top 1
+Epoch 3, global step 2380: 'val_fss_9' was not in top 1
+Epoch 4, global step 2975: 'val_fss_9' was not in top 1
+Epoch 5, global step 3570: 'val_fss_9' was not in top 1
+Epoch 6, global step 4165: 'val_fss_9' was not in top 1
+[rank: 0] Monitored metric val_fss_9 did not improve in the last 5 records. Best score: 0.205. Signaling Trainer to stop.
+Epoch 7, global step 4760: 'val_fss_9' was not in top 1

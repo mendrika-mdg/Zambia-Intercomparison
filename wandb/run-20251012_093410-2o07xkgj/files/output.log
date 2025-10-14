@@ -1,0 +1,24 @@
+/home/users/mendrika/virtual-env/DeepLearning/lib/python3.12/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:654: Checkpoint directory /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/t1_grid exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+
+  | Name            | Type               | Params | Mode
+---------------------------------------------------------------
+0 | in_proj         | Linear             | 1.4 K  | train
+1 | transformer     | TransformerEncoder | 793 K  | train
+2 | global_proj     | Linear             | 640    | train
+3 | gridder         | AdaptiveTokenGrid  | 0      | train
+4 | decoder         | SmoothDecoder      | 257 K  | train
+5 | criterion_small | FSSLoss            | 0      | train
+6 | criterion_mid   | FSSLoss            | 0      | train
+7 | criterion_big   | FSSLoss            | 0      | train
+8 | val_auc         | BinaryAUROC        | 0      | train
+---------------------------------------------------------------
+1.1 M     Trainable params
+0         Non-trainable params
+1.1 M     Total params
+4.209     Total estimated model params size (MB)
+68        Modules in train mode
+0         Modules in eval mode
+Epoch 29: 100%|██████████| 1189/1189 [01:31<00:00, 12.93it/s, v_num=xkgj, val_fss_9=0.183, val_auc=0.742]
+Done.                                                                   
+`Trainer.fit` stopped: `max_epochs=30` reached.

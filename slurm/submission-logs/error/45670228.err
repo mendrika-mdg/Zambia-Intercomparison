@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/users/mendrika/Zambia-Intercomparison/scripts/zambia-predict-zcast.py", line 15, in <module>
+    from zambia_lag_corrected import Core2MapModel
+  File "/home/users/mendrika/Zambia-Intercomparison/models/training/zambia_lag_corrected.py", line 7, in <module>
+    import pytorch_lightning as pl
+ModuleNotFoundError: No module named 'pytorch_lightning'
