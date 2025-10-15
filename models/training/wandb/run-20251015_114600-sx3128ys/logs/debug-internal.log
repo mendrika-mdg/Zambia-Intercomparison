@@ -1,0 +1,15 @@
+{"time":"2025-10-15T11:46:01.114039823+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251015_114600-sx3128ys/logs/debug-core.log"}
+{"time":"2025-10-15T11:46:01.362568589+01:00","level":"INFO","msg":"stream: created new stream","id":"sx3128ys"}
+{"time":"2025-10-15T11:46:01.362637727+01:00","level":"INFO","msg":"stream: started","id":"sx3128ys"}
+{"time":"2025-10-15T11:46:01.362655067+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"sx3128ys"}
+{"time":"2025-10-15T11:46:01.362682407+01:00","level":"INFO","msg":"sender: started","stream_id":"sx3128ys"}
+{"time":"2025-10-15T11:46:01.362681987+01:00","level":"INFO","msg":"handler: started","stream_id":"sx3128ys"}
+{"time":"2025-10-15T11:46:01.730155833+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T11:58:01.950015869+01:00","level":"INFO","msg":"stream: closing","id":"sx3128ys"}
+{"time":"2025-10-15T11:58:01.950155257+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-15T11:58:01.950299264+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-15T11:58:02.613370058+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T11:58:02.774306465+01:00","level":"INFO","msg":"handler: closed","stream_id":"sx3128ys"}
+{"time":"2025-10-15T11:58:02.774330624+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"sx3128ys"}
+{"time":"2025-10-15T11:58:02.774344714+01:00","level":"INFO","msg":"sender: closed","stream_id":"sx3128ys"}
+{"time":"2025-10-15T11:58:02.776522806+01:00","level":"INFO","msg":"stream: closed","id":"sx3128ys"}

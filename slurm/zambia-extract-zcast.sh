@@ -26,7 +26,7 @@ export HDF5_USE_FILE_LOCKING=FALSE
 # ---------------------------------------------------------------------
 
 lead_time=$1
-script=/home/users/mendrika/Zambia-Intercomparison/scripts/zambia-extract-zcast.py
+script=/home/users/mendrika/Zambia-Intercomparison/scripts/zambia-extract-zcast-ensemble.py
 
 # ---------------------------------------------------------------------
 # Validation

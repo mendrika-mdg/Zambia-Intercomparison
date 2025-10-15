@@ -12,7 +12,7 @@ from scipy.ndimage import uniform_filter
 lead_time = sys.argv[1]
 target_hour = sys.argv[2]
 
-base_dir = f"/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/combined_nowcasts/t{lead_time}"
+base_dir = f"/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/combined_nowcasts/ensemble/t{lead_time}"
 
 windows = [3, 9, 25, 49, 81, 121]
 PIXEL_SIZE_KM = 3
@@ -97,6 +97,7 @@ for w in windows:
 # ---------------------------------------------------------------------
 # Save results to CSV
 # ---------------------------------------------------------------------
-output_csv = f"fss_hour_{target_hour}_t{lead_time}.csv"
+output_csv = f"/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/FSS/ensemble/fss_hour_{target_hour}_t{lead_time}.csv"
+os.makedirs(os.path.dirname(output_csv), exist_ok=True)
 pd.DataFrame(rows).to_csv(output_csv, index=False)
 print(f"\nSaved FSS summary to {output_csv}")

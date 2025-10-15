@@ -1,0 +1,16 @@
+{"time":"2025-10-15T08:58:11.690525585+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251015_085811-4dq86lum/logs/debug-core.log"}
+{"time":"2025-10-15T08:58:11.950676916+01:00","level":"INFO","msg":"stream: created new stream","id":"4dq86lum"}
+{"time":"2025-10-15T08:58:11.950715086+01:00","level":"INFO","msg":"stream: started","id":"4dq86lum"}
+{"time":"2025-10-15T08:58:11.950733676+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"4dq86lum"}
+{"time":"2025-10-15T08:58:11.950762155+01:00","level":"INFO","msg":"sender: started","stream_id":"4dq86lum"}
+{"time":"2025-10-15T08:58:11.950747315+01:00","level":"INFO","msg":"handler: started","stream_id":"4dq86lum"}
+{"time":"2025-10-15T08:58:12.226296872+01:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"An internal error occurred. Please contact support.\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-10-15T08:58:14.823564433+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T09:08:02.327078759+01:00","level":"INFO","msg":"stream: closing","id":"4dq86lum"}
+{"time":"2025-10-15T09:08:02.327164968+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-15T09:08:02.327393626+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-15T09:08:02.875177609+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T09:08:03.258151719+01:00","level":"INFO","msg":"handler: closed","stream_id":"4dq86lum"}
+{"time":"2025-10-15T09:08:03.258179479+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4dq86lum"}
+{"time":"2025-10-15T09:08:03.258223268+01:00","level":"INFO","msg":"sender: closed","stream_id":"4dq86lum"}
+{"time":"2025-10-15T09:08:03.260227815+01:00","level":"INFO","msg":"stream: closed","id":"4dq86lum"}

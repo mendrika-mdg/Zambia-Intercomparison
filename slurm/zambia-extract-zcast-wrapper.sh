@@ -1,5 +1,5 @@
 #!/bin/bash
-# Launcher for Zambia NFLICS extraction jobs
+# Launcher for Zambia Zcast extraction jobs
 
 JOB_SCRIPT="/home/users/mendrika/Zambia-Intercomparison/slurm/zambia-extract-zcast.sh"
 LOG_DIR="/home/users/mendrika/Zambia-Intercomparison/slurm/submission-logs"

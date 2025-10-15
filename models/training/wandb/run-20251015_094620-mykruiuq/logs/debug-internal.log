@@ -1,0 +1,15 @@
+{"time":"2025-10-15T09:46:20.447664745+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251015_094620-mykruiuq/logs/debug-core.log"}
+{"time":"2025-10-15T09:46:20.693645047+01:00","level":"INFO","msg":"stream: created new stream","id":"mykruiuq"}
+{"time":"2025-10-15T09:46:20.693687817+01:00","level":"INFO","msg":"stream: started","id":"mykruiuq"}
+{"time":"2025-10-15T09:46:20.693711207+01:00","level":"INFO","msg":"sender: started","stream_id":"mykruiuq"}
+{"time":"2025-10-15T09:46:20.693710767+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"mykruiuq"}
+{"time":"2025-10-15T09:46:20.693735197+01:00","level":"INFO","msg":"handler: started","stream_id":"mykruiuq"}
+{"time":"2025-10-15T09:46:21.132241932+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T09:58:33.363218348+01:00","level":"INFO","msg":"stream: closing","id":"mykruiuq"}
+{"time":"2025-10-15T09:58:33.363274028+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-15T09:58:33.363620958+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-15T09:58:33.76016414+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T09:58:33.953766512+01:00","level":"INFO","msg":"handler: closed","stream_id":"mykruiuq"}
+{"time":"2025-10-15T09:58:33.953822843+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mykruiuq"}
+{"time":"2025-10-15T09:58:33.953844652+01:00","level":"INFO","msg":"sender: closed","stream_id":"mykruiuq"}
+{"time":"2025-10-15T09:58:33.956005212+01:00","level":"INFO","msg":"stream: closed","id":"mykruiuq"}

@@ -21,7 +21,7 @@ export HDF5_USE_FILE_LOCKING=FALSE
 # Parameters
 lead_time=$1
 
-script=/home/users/mendrika/Zambia-Intercomparison/scripts/zambia-create-2d-timeseries.py
+script=/home/users/mendrika/Zambia-Intercomparison/scripts/zambia-create-2d-timeseries-ensemble.py
 
 # Verify the script exists
 if [ ! -f "$script" ]; then

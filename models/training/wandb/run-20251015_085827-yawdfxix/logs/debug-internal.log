@@ -1,0 +1,15 @@
+{"time":"2025-10-15T08:58:28.167434998+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251015_085827-yawdfxix/logs/debug-core.log"}
+{"time":"2025-10-15T08:58:28.419244531+01:00","level":"INFO","msg":"stream: created new stream","id":"yawdfxix"}
+{"time":"2025-10-15T08:58:28.419289251+01:00","level":"INFO","msg":"stream: started","id":"yawdfxix"}
+{"time":"2025-10-15T08:58:28.419292631+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"yawdfxix"}
+{"time":"2025-10-15T08:58:28.419312791+01:00","level":"INFO","msg":"sender: started","stream_id":"yawdfxix"}
+{"time":"2025-10-15T08:58:28.419339881+01:00","level":"INFO","msg":"handler: started","stream_id":"yawdfxix"}
+{"time":"2025-10-15T08:58:28.823327608+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T09:07:21.062415915+01:00","level":"INFO","msg":"stream: closing","id":"yawdfxix"}
+{"time":"2025-10-15T09:07:21.062549855+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-15T09:07:21.062746935+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-15T09:07:21.550418388+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T09:07:21.707302661+01:00","level":"INFO","msg":"handler: closed","stream_id":"yawdfxix"}
+{"time":"2025-10-15T09:07:21.707338981+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"yawdfxix"}
+{"time":"2025-10-15T09:07:21.707366441+01:00","level":"INFO","msg":"sender: closed","stream_id":"yawdfxix"}
+{"time":"2025-10-15T09:07:21.709140831+01:00","level":"INFO","msg":"stream: closed","id":"yawdfxix"}

@@ -1,0 +1,15 @@
+{"time":"2025-10-15T09:49:16.239970919+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251015_094915-grub5zpn/logs/debug-core.log"}
+{"time":"2025-10-15T09:49:16.492751108+01:00","level":"INFO","msg":"stream: created new stream","id":"grub5zpn"}
+{"time":"2025-10-15T09:49:16.492794878+01:00","level":"INFO","msg":"stream: started","id":"grub5zpn"}
+{"time":"2025-10-15T09:49:16.492807568+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"grub5zpn"}
+{"time":"2025-10-15T09:49:16.492835788+01:00","level":"INFO","msg":"sender: started","stream_id":"grub5zpn"}
+{"time":"2025-10-15T09:49:16.492816568+01:00","level":"INFO","msg":"handler: started","stream_id":"grub5zpn"}
+{"time":"2025-10-15T09:49:16.960165233+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T10:02:25.335740545+01:00","level":"INFO","msg":"stream: closing","id":"grub5zpn"}
+{"time":"2025-10-15T10:02:25.335798395+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-15T10:02:25.336043435+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-15T10:02:25.857378004+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-15T10:02:26.062913784+01:00","level":"INFO","msg":"handler: closed","stream_id":"grub5zpn"}
+{"time":"2025-10-15T10:02:26.062927944+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"grub5zpn"}
+{"time":"2025-10-15T10:02:26.062966014+01:00","level":"INFO","msg":"sender: closed","stream_id":"grub5zpn"}
+{"time":"2025-10-15T10:02:26.065651464+01:00","level":"INFO","msg":"stream: closed","id":"grub5zpn"}
