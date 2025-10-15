@@ -1,9 +1,0 @@
-Creating shards for partition=VAL, lead time=1h
-Total input files: 4,872
-Saved shard_000 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/val_t1/shard_000.pt
-Saved shard_001 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/val_t1/shard_001.pt
-Saved shard_002 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/val_t1/shard_002.pt
-Saved shard_003 (1000 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/val_t1/shard_003.pt
-Saved shard_004 (872 samples) → /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/shards/t1/val_t1/shard_004.pt
-Finished creating VAL shards for LT1.
-Job completed successfully.

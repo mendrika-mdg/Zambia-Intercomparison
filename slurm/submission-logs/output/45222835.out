@@ -1,5 +1,0 @@
-Loaded scaler from /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/scaling/scaler_realcores.pt
-Applying to partition=TEST, lead_time=1h
-Found 23 shard files to process...
-Finished scaling test_t1. Scaled files saved to /gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/preprocessed/t1/test_t1
-Job completed successfully.
