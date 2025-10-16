@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=fss-computation
+#SBATCH --job-name=bss-computation
 #SBATCH --time=24:00:00
 #SBATCH --mem=64G
 #SBATCH --qos=standard
@@ -22,7 +22,7 @@ export HDF5_USE_FILE_LOCKING=FALSE
 lead_time=$1
 target_hour=$2
 
-script=/home/users/mendrika/Zambia-Intercomparison/scripts/zambia-compute-fss-many-samples.py
+script=/home/users/mendrika/Zambia-Intercomparison/scripts/zambia-compute-bss-many-samples.py
 
 # Verify the script exists
 if [ ! -f "$script" ]; then
