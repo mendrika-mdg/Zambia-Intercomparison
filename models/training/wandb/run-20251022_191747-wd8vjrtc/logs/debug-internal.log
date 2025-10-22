@@ -1,0 +1,15 @@
+{"time":"2025-10-22T19:17:47.347149692+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251022_191747-wd8vjrtc/logs/debug-core.log"}
+{"time":"2025-10-22T19:17:47.591484803+01:00","level":"INFO","msg":"stream: created new stream","id":"wd8vjrtc"}
+{"time":"2025-10-22T19:17:47.591536492+01:00","level":"INFO","msg":"stream: started","id":"wd8vjrtc"}
+{"time":"2025-10-22T19:17:47.591553432+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"wd8vjrtc"}
+{"time":"2025-10-22T19:17:47.591569482+01:00","level":"INFO","msg":"handler: started","stream_id":"wd8vjrtc"}
+{"time":"2025-10-22T19:17:47.591593262+01:00","level":"INFO","msg":"sender: started","stream_id":"wd8vjrtc"}
+{"time":"2025-10-22T19:17:47.956300848+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-22T19:28:25.346523959+01:00","level":"INFO","msg":"stream: closing","id":"wd8vjrtc"}
+{"time":"2025-10-22T19:28:25.346573368+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-22T19:28:25.346814676+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-22T19:28:25.851319626+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-22T19:28:26.215461407+01:00","level":"INFO","msg":"handler: closed","stream_id":"wd8vjrtc"}
+{"time":"2025-10-22T19:28:26.215484657+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wd8vjrtc"}
+{"time":"2025-10-22T19:28:26.215498197+01:00","level":"INFO","msg":"sender: closed","stream_id":"wd8vjrtc"}
+{"time":"2025-10-22T19:28:26.218216574+01:00","level":"INFO","msg":"stream: closed","id":"wd8vjrtc"}

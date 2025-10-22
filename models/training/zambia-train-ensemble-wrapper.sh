@@ -7,7 +7,7 @@ JOB_SCRIPT="/home/users/mendrika/Zambia-Intercomparison/models/training/zambia-t
 LOG_DIR="/home/users/mendrika/Zambia-Intercomparison/slurm/submission-logs"
 
 # Lead times and seeds
-LEAD_TIMES=("4" "6")
+LEAD_TIMES=("1" "2" "4" "6")
 SEEDS=(42 1337 777 999 2025)
 
 # Loop over all combinations

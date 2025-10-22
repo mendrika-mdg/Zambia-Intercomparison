@@ -47,6 +47,6 @@ fi
 # Run training
 # ---------------------------------------------------------------------
 echo "Starting distributed training for lead_time=${lead_time}, seed=${seed}"
-torchrun --standalone --nproc_per_node=4 /home/users/mendrika/Zambia-Intercomparison/models/training/zambia_ensemble_hybrid.py "$lead_time" "$seed"
+torchrun --standalone --nproc_per_node=4 /home/users/mendrika/Zambia-Intercomparison/models/training/zambia_ensemble_hybrid_improved_multiscale.py "$lead_time" "$seed"
 
 echo "Training completed at $(date)"

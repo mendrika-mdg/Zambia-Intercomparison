@@ -1,0 +1,15 @@
+{"time":"2025-10-21T16:40:58.167363375+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251021_164057-ik8dp5v6/logs/debug-core.log"}
+{"time":"2025-10-21T16:40:58.4206373+01:00","level":"INFO","msg":"stream: created new stream","id":"ik8dp5v6"}
+{"time":"2025-10-21T16:40:58.420675489+01:00","level":"INFO","msg":"stream: started","id":"ik8dp5v6"}
+{"time":"2025-10-21T16:40:58.420706359+01:00","level":"INFO","msg":"handler: started","stream_id":"ik8dp5v6"}
+{"time":"2025-10-21T16:40:58.420733398+01:00","level":"INFO","msg":"sender: started","stream_id":"ik8dp5v6"}
+{"time":"2025-10-21T16:40:58.420704199+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"ik8dp5v6"}
+{"time":"2025-10-21T16:40:58.873668745+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T16:48:08.335729942+01:00","level":"INFO","msg":"stream: closing","id":"ik8dp5v6"}
+{"time":"2025-10-21T16:48:08.335786781+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-21T16:48:08.336684055+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-21T16:48:08.775439785+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T16:48:09.110928209+01:00","level":"INFO","msg":"handler: closed","stream_id":"ik8dp5v6"}
+{"time":"2025-10-21T16:48:09.110962348+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ik8dp5v6"}
+{"time":"2025-10-21T16:48:09.110966508+01:00","level":"INFO","msg":"sender: closed","stream_id":"ik8dp5v6"}
+{"time":"2025-10-21T16:48:09.113534972+01:00","level":"INFO","msg":"stream: closed","id":"ik8dp5v6"}

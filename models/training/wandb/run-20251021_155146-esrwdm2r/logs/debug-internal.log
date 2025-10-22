@@ -1,0 +1,15 @@
+{"time":"2025-10-21T15:51:47.780455257+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251021_155146-esrwdm2r/logs/debug-core.log"}
+{"time":"2025-10-21T15:51:48.146204723+01:00","level":"INFO","msg":"stream: created new stream","id":"esrwdm2r"}
+{"time":"2025-10-21T15:51:48.146267852+01:00","level":"INFO","msg":"stream: started","id":"esrwdm2r"}
+{"time":"2025-10-21T15:51:48.146297261+01:00","level":"INFO","msg":"sender: started","stream_id":"esrwdm2r"}
+{"time":"2025-10-21T15:51:48.146292921+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"esrwdm2r"}
+{"time":"2025-10-21T15:51:48.146323361+01:00","level":"INFO","msg":"handler: started","stream_id":"esrwdm2r"}
+{"time":"2025-10-21T15:51:48.665306163+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T16:07:58.347278247+01:00","level":"INFO","msg":"stream: closing","id":"esrwdm2r"}
+{"time":"2025-10-21T16:07:58.347368565+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-21T16:07:58.347604091+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-21T16:07:58.764066962+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T16:07:58.93276854+01:00","level":"INFO","msg":"handler: closed","stream_id":"esrwdm2r"}
+{"time":"2025-10-21T16:07:58.932848829+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"esrwdm2r"}
+{"time":"2025-10-21T16:07:58.933026556+01:00","level":"INFO","msg":"sender: closed","stream_id":"esrwdm2r"}
+{"time":"2025-10-21T16:07:58.936785137+01:00","level":"INFO","msg":"stream: closed","id":"esrwdm2r"}

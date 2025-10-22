@@ -1,0 +1,1 @@
+{"val_fss_9":0.126174196600914,"_runtime":395.22071488,"epoch":9,"trainer/global_step":5949,"_timestamp":1.7610615792769797e+09,"val_auc":0.7607386112213135,"train_loss_epoch":0.3301091492176056,"_step":1209,"val_fss_3":0.11984824389219284,"val_fss_5":0.12195806205272675,"_wandb":{"runtime":396},"train_loss_step":0.365690678358078}

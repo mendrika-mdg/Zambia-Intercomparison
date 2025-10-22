@@ -1,0 +1,15 @@
+{"time":"2025-10-21T16:44:28.436365753+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251021_164428-mg2gb9a1/logs/debug-core.log"}
+{"time":"2025-10-21T16:44:28.685021214+01:00","level":"INFO","msg":"stream: created new stream","id":"mg2gb9a1"}
+{"time":"2025-10-21T16:44:28.685069853+01:00","level":"INFO","msg":"stream: started","id":"mg2gb9a1"}
+{"time":"2025-10-21T16:44:28.685089713+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"mg2gb9a1"}
+{"time":"2025-10-21T16:44:28.685112982+01:00","level":"INFO","msg":"sender: started","stream_id":"mg2gb9a1"}
+{"time":"2025-10-21T16:44:28.685099113+01:00","level":"INFO","msg":"handler: started","stream_id":"mg2gb9a1"}
+{"time":"2025-10-21T16:44:29.019923421+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T16:50:53.331558088+01:00","level":"INFO","msg":"stream: closing","id":"mg2gb9a1"}
+{"time":"2025-10-21T16:50:53.331650106+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-21T16:50:53.331887652+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-21T16:50:53.760595552+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T16:50:54.109546775+01:00","level":"INFO","msg":"handler: closed","stream_id":"mg2gb9a1"}
+{"time":"2025-10-21T16:50:54.109560475+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mg2gb9a1"}
+{"time":"2025-10-21T16:50:54.109574985+01:00","level":"INFO","msg":"sender: closed","stream_id":"mg2gb9a1"}
+{"time":"2025-10-21T16:50:54.118963897+01:00","level":"INFO","msg":"stream: closed","id":"mg2gb9a1"}

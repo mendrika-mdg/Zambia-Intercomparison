@@ -1,0 +1,85 @@
+[rank: 3] Seed set to 777
+[rank: 0] Seed set to 777
+[rank: 2] Seed set to 777
+[rank: 1] Seed set to 777
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+Initializing distributed: GLOBAL_RANK: 1, MEMBER: 2/4
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/4
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 4 processes
+----------------------------------------------------------------------------------------------------
+
+Initializing distributed: GLOBAL_RANK: 3, MEMBER: 4/4
+Initializing distributed: GLOBAL_RANK: 2, MEMBER: 3/4
+wandb: Currently logged in as: mgrakotomanga (mgrakotomanga-university-of-leeds) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.20.1
+wandb: Run data is saved locally in ./wandb/run-20251022_202327-up9u4oyb
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run t6-seed777
+wandb: ⭐️ View project at https://wandb.ai/mgrakotomanga-university-of-leeds/zambia-multiscale-hybrid-sharp
+wandb: 🚀 View run at https://wandb.ai/mgrakotomanga-university-of-leeds/zambia-multiscale-hybrid-sharp/runs/up9u4oyb
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+LOCAL_RANK: 3 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+LOCAL_RANK: 1 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+LOCAL_RANK: 2 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+
+  | Name         | Type                 | Params | Mode 
+--------------------------------------------------------------
+0 | in_proj      | Sequential           | 1.4 K  | train
+1 | transformer  | TransformerEncoder   | 793 K  | train
+2 | global_proj  | Linear               | 640    | train
+3 | map_proj     | Linear               | 4.2 M  | train
+4 | decoder      | SmoothDecoder        | 682 K  | train
+5 | criterion    | MultiScaleHybridLoss | 0      | train
+6 | val_auc      | BinaryAUROC          | 0      | train
+  | other params | n/a                  | 1      | n/a  
+--------------------------------------------------------------
+5.7 M     Trainable params
+0         Non-trainable params
+5.7 M     Total params
+22.821    Total estimated model params size (MB)
+78        Modules in train mode
+0         Modules in eval mode
+[rank: 0] Metric val_fss_9 improved. New best score: 0.102
+[rank: 1] Metric val_fss_9 improved. New best score: 0.102
+[rank: 3] Metric val_fss_9 improved. New best score: 0.102
+[rank: 2] Metric val_fss_9 improved. New best score: 0.102
+Epoch 0, global step 595: 'val_fss_9' reached 0.10207 (best 0.10207), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/ensemble_multiscale_many/sharp/t6/seed777/best-core2map.ckpt' as top 1
+[rank: 2] Metric val_fss_9 improved by 0.015 >= min_delta = 0.001. New best score: 0.117
+[rank: 0] Metric val_fss_9 improved by 0.015 >= min_delta = 0.001. New best score: 0.117
+[rank: 1] Metric val_fss_9 improved by 0.015 >= min_delta = 0.001. New best score: 0.117
+[rank: 3] Metric val_fss_9 improved by 0.015 >= min_delta = 0.001. New best score: 0.117
+Epoch 1, global step 1190: 'val_fss_9' reached 0.11748 (best 0.11748), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/ensemble_multiscale_many/sharp/t6/seed777/best-core2map.ckpt' as top 1
+[rank: 0] Metric val_fss_9 improved by 0.005 >= min_delta = 0.001. New best score: 0.122
+[rank: 1] Metric val_fss_9 improved by 0.005 >= min_delta = 0.001. New best score: 0.122
+[rank: 2] Metric val_fss_9 improved by 0.005 >= min_delta = 0.001. New best score: 0.122
+[rank: 3] Metric val_fss_9 improved by 0.005 >= min_delta = 0.001. New best score: 0.122
+Epoch 2, global step 1785: 'val_fss_9' reached 0.12233 (best 0.12233), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/ensemble_multiscale_many/sharp/t6/seed777/best-core2map.ckpt' as top 1
+[rank: 2] Metric val_fss_9 improved by 0.003 >= min_delta = 0.001. New best score: 0.125
+[rank: 1] Metric val_fss_9 improved by 0.003 >= min_delta = 0.001. New best score: 0.125
+[rank: 3] Metric val_fss_9 improved by 0.003 >= min_delta = 0.001. New best score: 0.125
+[rank: 0] Metric val_fss_9 improved by 0.003 >= min_delta = 0.001. New best score: 0.125
+Epoch 3, global step 2380: 'val_fss_9' reached 0.12521 (best 0.12521), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/ensemble_multiscale_many/sharp/t6/seed777/best-core2map.ckpt' as top 1
+[rank: 2] Metric val_fss_9 improved by 0.002 >= min_delta = 0.001. New best score: 0.128
+[rank: 1] Metric val_fss_9 improved by 0.002 >= min_delta = 0.001. New best score: 0.128
+[rank: 0] Metric val_fss_9 improved by 0.002 >= min_delta = 0.001. New best score: 0.128
+[rank: 3] Metric val_fss_9 improved by 0.002 >= min_delta = 0.001. New best score: 0.128
+Epoch 4, global step 2975: 'val_fss_9' reached 0.12759 (best 0.12759), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/ensemble_multiscale_many/sharp/t6/seed777/best-core2map.ckpt' as top 1
+[rank: 3] Metric val_fss_9 improved by 0.002 >= min_delta = 0.001. New best score: 0.130
+[rank: 1] Metric val_fss_9 improved by 0.002 >= min_delta = 0.001. New best score: 0.130
+[rank: 2] Metric val_fss_9 improved by 0.002 >= min_delta = 0.001. New best score: 0.130
+[rank: 0] Metric val_fss_9 improved by 0.002 >= min_delta = 0.001. New best score: 0.130
+Epoch 5, global step 3570: 'val_fss_9' reached 0.12953 (best 0.12953), saving model to '/gws/nopw/j04/wiser_ewsa/mrakotomanga/Intercomparison/checkpoints/ensemble_multiscale_many/sharp/t6/seed777/best-core2map.ckpt' as top 1
+Epoch 6, global step 4165: 'val_fss_9' was not in top 1
+Epoch 7, global step 4760: 'val_fss_9' was not in top 1
+Epoch 8, global step 5355: 'val_fss_9' was not in top 1
+Epoch 9, global step 5950: 'val_fss_9' was not in top 1
+[rank: 0] Monitored metric val_fss_9 did not improve in the last 5 records. Best score: 0.130. Signaling Trainer to stop.
+[rank: 2] Monitored metric val_fss_9 did not improve in the last 5 records. Best score: 0.130. Signaling Trainer to stop.
+[rank: 1] Monitored metric val_fss_9 did not improve in the last 5 records. Best score: 0.130. Signaling Trainer to stop.
+[rank: 3] Monitored metric val_fss_9 did not improve in the last 5 records. Best score: 0.130. Signaling Trainer to stop.
+Epoch 10, global step 6545: 'val_fss_9' was not in top 1

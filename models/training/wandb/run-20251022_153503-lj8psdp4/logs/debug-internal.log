@@ -1,0 +1,15 @@
+{"time":"2025-10-22T15:35:04.310127767+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251022_153503-lj8psdp4/logs/debug-core.log"}
+{"time":"2025-10-22T15:35:04.575876621+01:00","level":"INFO","msg":"stream: created new stream","id":"lj8psdp4"}
+{"time":"2025-10-22T15:35:04.57594387+01:00","level":"INFO","msg":"stream: started","id":"lj8psdp4"}
+{"time":"2025-10-22T15:35:04.57599486+01:00","level":"INFO","msg":"sender: started","stream_id":"lj8psdp4"}
+{"time":"2025-10-22T15:35:04.57598826+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"lj8psdp4"}
+{"time":"2025-10-22T15:35:04.576037739+01:00","level":"INFO","msg":"handler: started","stream_id":"lj8psdp4"}
+{"time":"2025-10-22T15:35:05.123937268+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-22T15:58:14.801681569+01:00","level":"INFO","msg":"stream: closing","id":"lj8psdp4"}
+{"time":"2025-10-22T15:58:14.801763698+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-22T15:58:14.802010046+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-22T15:58:15.285937056+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-22T15:58:15.468681762+01:00","level":"INFO","msg":"handler: closed","stream_id":"lj8psdp4"}
+{"time":"2025-10-22T15:58:15.468695232+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"lj8psdp4"}
+{"time":"2025-10-22T15:58:15.468713592+01:00","level":"INFO","msg":"sender: closed","stream_id":"lj8psdp4"}
+{"time":"2025-10-22T15:58:15.470071561+01:00","level":"INFO","msg":"stream: closed","id":"lj8psdp4"}

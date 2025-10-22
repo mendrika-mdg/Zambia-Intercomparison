@@ -19,8 +19,8 @@ export OMP_NUM_THREADS=1
 export HDF5_USE_FILE_LOCKING=FALSE
 
 # Parameters
-year=$1
-script=/home/users/mendrika/Zambia-Intercomparison/scripts/zambia-data-preparation.py
+year=2025
+script=/home/users/mendrika/Zambia-Intercomparison/scripts/zambia-data-preparation-nrt.py
 
 # Verify the script exists
 if [ ! -f "$script" ]; then

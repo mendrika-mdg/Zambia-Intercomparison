@@ -1,0 +1,15 @@
+{"time":"2025-10-22T18:18:26.27359615+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251022_181826-98ev08hw/logs/debug-core.log"}
+{"time":"2025-10-22T18:18:26.529739249+01:00","level":"INFO","msg":"stream: created new stream","id":"98ev08hw"}
+{"time":"2025-10-22T18:18:26.529776708+01:00","level":"INFO","msg":"stream: started","id":"98ev08hw"}
+{"time":"2025-10-22T18:18:26.529788098+01:00","level":"INFO","msg":"handler: started","stream_id":"98ev08hw"}
+{"time":"2025-10-22T18:18:26.529800588+01:00","level":"INFO","msg":"sender: started","stream_id":"98ev08hw"}
+{"time":"2025-10-22T18:18:26.529846418+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"98ev08hw"}
+{"time":"2025-10-22T18:18:27.01588855+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-22T18:35:49.242695923+01:00","level":"INFO","msg":"stream: closing","id":"98ev08hw"}
+{"time":"2025-10-22T18:35:49.242772632+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-22T18:35:49.24306022+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-22T18:35:49.674378736+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-22T18:35:50.024316443+01:00","level":"INFO","msg":"handler: closed","stream_id":"98ev08hw"}
+{"time":"2025-10-22T18:35:50.024342443+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"98ev08hw"}
+{"time":"2025-10-22T18:35:50.024350303+01:00","level":"INFO","msg":"sender: closed","stream_id":"98ev08hw"}
+{"time":"2025-10-22T18:35:50.026425665+01:00","level":"INFO","msg":"stream: closed","id":"98ev08hw"}

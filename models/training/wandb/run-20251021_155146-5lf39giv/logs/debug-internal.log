@@ -1,0 +1,15 @@
+{"time":"2025-10-21T15:51:46.926812561+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"wandb/run-20251021_155146-5lf39giv/logs/debug-core.log"}
+{"time":"2025-10-21T15:51:47.178499564+01:00","level":"INFO","msg":"stream: created new stream","id":"5lf39giv"}
+{"time":"2025-10-21T15:51:47.178532104+01:00","level":"INFO","msg":"stream: started","id":"5lf39giv"}
+{"time":"2025-10-21T15:51:47.178559173+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"5lf39giv"}
+{"time":"2025-10-21T15:51:47.178571913+01:00","level":"INFO","msg":"handler: started","stream_id":"5lf39giv"}
+{"time":"2025-10-21T15:51:47.178577044+01:00","level":"INFO","msg":"sender: started","stream_id":"5lf39giv"}
+{"time":"2025-10-21T15:51:47.608192677+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-21T16:06:09.93046764+01:00","level":"INFO","msg":"stream: closing","id":"5lf39giv"}
+{"time":"2025-10-21T16:06:09.93051056+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-10-21T16:06:09.93079367+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-10-21T16:06:10.322717155+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-21T16:06:10.522536937+01:00","level":"INFO","msg":"handler: closed","stream_id":"5lf39giv"}
+{"time":"2025-10-21T16:06:10.522585247+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"5lf39giv"}
+{"time":"2025-10-21T16:06:10.522615557+01:00","level":"INFO","msg":"sender: closed","stream_id":"5lf39giv"}
+{"time":"2025-10-21T16:06:10.525194927+01:00","level":"INFO","msg":"stream: closed","id":"5lf39giv"}
